@@ -1,4 +1,20 @@
-﻿namespace Methode_Ubergabewert001
+static void Main(string[] args)
+{
+    Random _rnd = new Random();
+    CRandom _crandom = new CRandom();
+
+    Console.WriteLine(_crandom.get_r(2));
+}
+class CRandom
+{
+    internal int get_r(int _r)
+    {
+        return _r + _r;
+    }
+}
+//
+//
+namespace Methode_Ubergabewert001
 {
     internal class Program
     {
