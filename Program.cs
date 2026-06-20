@@ -14,6 +14,29 @@ class CRandom
 }
 //
 //
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random _rnd = new Random();
+            CRandom _crandom = new CRandom();
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("I0 " + _crandom.get_r(_rnd.Next(0, 10)));
+                Console.WriteLine("I1 " + _rnd.Next(0, 10));
+            }
+        }
+        class CRandom
+        {
+            internal int get_r(int _r)
+            {
+                return _r;
+            }
+        }
+    }
+}
+//
+//
 namespace Methode_Ubergabewert001
 {
     internal class Program
